@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { Observable } from 'rxjs';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-shipping',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./shipping.component.css']
 })
 export class ShippingComponent {
+
+
+  constructor(private cartService: CartService) { }
+
 
 }
